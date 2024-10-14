@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+               /* ตั้งค่าพื้นหลัง */
+               body {
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4
+        }
+
+        /* จัดรูปแบบลิงก์ */
+        li {
+            display: inline;
+            padding: 10px;
+        }
+        /* สไตล์สำหรับเมนูนำทาง */
+.navbar {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-list li a:hover {
+    color: #FA4616;
+}
+hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+}
+
+
+        a {
+            text-decoration: none;
+            color: #7B8189;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #FA4616;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+                /* กล่องแสดงภาพ */
+                .box1 {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            float: left;
+            width: 50%;
+            padding: 5px;     
+            margin-top: 30px;
+            margin-left: 10px;
+            height: px;
+            text-align: center;
+            background-color: #f4f4f4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .img1{
+            border-radius: 10px;
+        }
+        .pbox1 {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            float: right;
+            width: 35%;
+            height: 145px;
+            padding: 10px;     
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: small;
+            
+        }
+                /* จัดกล่องให้เป็นระเบียบ */
+                .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+        mark {
+            background-color: #FA4616;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .box2 {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            float: right;
+            width: 50%;
+            padding: 5px;     
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: px;
+            text-align: center;
+            background-color: #f4f4f4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .pbox2 {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            float: left;
+            width: 35%;
+            height: 145px;
+            padding: 10px;     
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: small;
+             }
+             @media screen and (max-width:600px){
+              .container {width: 100%;
+
+              }      
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+<!-- เมนูนำทาง -->
+        <center>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="/ผลงาน/ผลงาน.html">ผลงาน</a></li>
+                    <li><a href="/หน้าสอง/เเนะนตัว.html">เเนะนำตัว</a></li>
+                    <li><a href="javascript:void(0);" onclick="goBack()">Back</a></li>
+                </ul>
+            </nav>
+        </center>
+        <hr>
+        
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+         <!-- รูปภาพ -->
+         <div class="box1">
+            <img class="img1" src="/ที่่เก็บรูป/ศิลปะพื้นฐาน.jpg" alt="เเข่งขันศิลปหัตถกรรมขั้นพื้นฐาน" width="100%" >
+        </div>
+        <div class="pbox1">
+           <p>กิจกรรมที่ผมเข้ารูปอันนี้คือการเเข่งขันหุ่นยนต์ระดับพื้นฐาน ของศิลปหัตถกรรม โดยหน้าที่ของผมคือช่วยประกอบหุ่นยนต์เเละเเก้ปัญหาสถานการณ์ที่ไม่คาดคิด โดยตอนนั้นผมได้<mark>รางวัลระดับเหรียญทองเเดง </p>
+        </div>
+        <div class="box2">
+            <img src="/ที่่เก็บรูป/กบนเ้อยคอยรัก.jpg" alt=""width="100%">
+        </div>
+        <div class="pbox2">
+             <p></p>
+        </div>
+    </div>
+        
+</body>
+</html>

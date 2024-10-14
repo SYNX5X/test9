@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* ตั้งค่าพื้นหลัง */
+        body {
+
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* จัดรูปแบบลิงก์ */
+        li {
+            display: inline;
+            padding: 10px;
+        }
+        /* สไตล์สำหรับเมนูนำทาง */
+.navbar {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-list li a:hover {
+    color: #FA4616;
+}
+hr{
+    border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 10px 0;
+}
+
+
+        a {
+            text-decoration: none;
+            color: #7B8189;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #FA4616;
+        }
+
+        /* กล่องข้อมูลส่วนตัว */
+        .box1 {
+            border: 0px solid;
+            border-radius: 7%;
+            padding: 10px;
+            margin-top: 30px;
+            margin-left: 7px;
+            margin-right: 10px;
+            float: right;
+            width: 40%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* กล่องแสดงภาพ */
+        .box2 {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            float: left;
+            width: 43%;
+            padding: 10px;     
+            margin-top: 30px;
+            margin-left: 10px;
+            height: 200px;
+            text-align: center;
+            background-color: #fff;
+            
+        }
+
+        /* กล่องคติประจำตัว */
+        .box3 {
+            border-radius: 10px;
+            float: left;
+            width: 43%;
+            padding: 15px;
+            margin-top: 20px;
+            margin-left: 5px;
+            text-align: center;
+            background-color: #f7f7f7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
+
+        .box3 p {
+            
+            font-size: 1.1rem;
+            color: #FA4616;
+        }
+        .pbox31{
+            font-weight: bold;
+        }
+
+        /* กล่องตัว "L" ใช้ flexbox */
+        .boxL {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .boxL-left {
+            width: 65%; /* ด้านซ้ายใหญ่ขึ้น */
+            background-color: #eaeaea;
+        }
+
+        .boxL-right {
+            width: 30%; /* ด้านขวาเล็กลง */
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        /* สไตล์รายการลิงก์ */
+        .Fli {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        /* จัดกล่องให้เป็นระเบียบ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- นำเนื้อหาไว้ในกล่อง container -->
+    <div class="container"> 
+    <!-- เมนูนำทาง -->
+     <center>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/หน้ากิจกรรม/หน้ากิจกรรม.html">กิจกรรมที่เข้าร่วม</a></li>
+            <li><a href="/ผลงาน/ผลงาน.html">ผลงาน</a></li>
+            <li><a href="javascript:void(0);" onclick="goBack()">Back</a></li>
+        </ul>
+    </nav>
+</center>
+<hr>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+
+        <!-- ข้อมูลส่วนตัวและการติดต่อ -->
+            <div class="box1">
+                <p>ข้อมูลส่วนตัวของผม:</p>
+                <ul>
+                    <li class="Fli"><a href="https://www.facebook.com/profile.php?id=100050257801642&locale=th_TH">Facebook</a></li>
+                    <li class="Fli"><a href="QRline.html">Line</a></li>
+                    <li class="Fli"><a href="https://www.instagram.com/stwdexr/">Instagram</a></li>
+                    <li class="Fli">Gmail <br>ที่สามารถติดต่อได้: dearrealme.5@gmail <br>.com</li>
+                    <li class="Fli"><a href="https://github.com/">Github</a></li>
+                </ul>
+            </div>
+
+        <!-- รูปภาพส่วนตัว -->
+        <div class="box2">
+            <img src="/ที่่เก็บรูป/att.-MlEVwh53nZ_LicRN_s-K1dNfx1TR3REKyUODkrLkjA.jpg" alt="Profile Image" width="100%" >
+        </div>
+
+        <!-- คติประจำตัว -->
+        <div class="box3">
+            <p class="pbox31">คติประจำตัว</p>
+            <p>เมื่อเราล้มจงลุกขึ้นให้เร็ว แล้วปรับปรุงตัวเองเพื่อพัฒนาต่อไป</p>
+        </div>
+
+        <!-- กล่องตัว "L" -->
+        <div class="boxL">
+            <div class="boxL-left"></div>
+            <div class="boxL-right">
+                <p>พื้นที่ว่างสำหรับข้อมูลเพิ่มเติม</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
